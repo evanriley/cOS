@@ -25,7 +25,6 @@ modules:
       - fish
       - zoxide
       - eza
-      - dnf
       - tmux
       - neovim
       - htop
