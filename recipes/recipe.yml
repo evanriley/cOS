@@ -30,6 +30,7 @@ modules:
       - htop
       - fzf
       - bat
+      - niri
       - git-delta
       - syncthing
       - polkit-kde
