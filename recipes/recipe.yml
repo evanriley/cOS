@@ -76,5 +76,8 @@ modules:
   - type: bling
     install:
       - negativo17
+  - type: chezmoi
+    repository: "https://github.com/evanriley/dots"
+    file-conflict-policy: replace
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
