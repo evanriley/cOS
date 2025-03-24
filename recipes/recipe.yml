@@ -47,9 +47,19 @@ modules:
 #    remove:
 
   - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+      repo-name: flathub-beta
+      repo-title: "Flathub (beta)"
+      install:
+        - com.yubico.yubioath
+  - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
-      # If no repo information is specified, Flathub will be used by default
+      repo-url: https://flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub"
       install:
         - org.mozilla.firefox
         - org.gnome.Loupe
@@ -58,14 +68,6 @@ modules:
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
-  - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-      repo-name: flathub-beta
-      repo-title: "Flathub (beta)"
-      install:
-        - com.yubico.yubioath
 
   - type: files
     files:
