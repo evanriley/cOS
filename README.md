@@ -1,8 +1,6 @@
 # cos &nbsp; [![bluebuild build badge](https://github.com/evanriley/cos/actions/workflows/build.yml/badge.svg)](https://github.com/evanriley/cos/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+This is my custom universal blue image include, primarily to be used with the niri window manager
 
 ## Installation
 
@@ -41,3 +39,7 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/evanriley/cos
 ```
+
+## Dotfiles
+
+This is to be used in tandem with my [dotfiles](https://github.com/evanriley/dots)
