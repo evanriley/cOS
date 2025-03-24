@@ -44,7 +44,9 @@ modules:
       - hypridle
       - gamescope
       - cascadia-code-nf-fonts
-#    remove:
+    remove:
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true
