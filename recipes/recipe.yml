@@ -54,6 +54,7 @@ modules:
         - org.mozilla.firefox
         - org.gnome.Loupe
         - com.discordapp.Discord
+        - com.valvesoftware.Steam
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
